@@ -44,7 +44,7 @@ section:target{
     font-size: 19px;
     letter-spacing: 1px;
 }
-.nav-link.active{
+.nav-link.activate{
     color: rgb(250, 3, 3)!important;
 }
 .navbar-toggler:focus{
