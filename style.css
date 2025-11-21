@@ -1,0 +1,383 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Helvetica', sans-serif;  
+    color:#000!important;
+    background-color: rgb(254, 255, 187);
+}
+body::-webkit-scrollbar{
+    width:8px;
+    }
+    body::-webkit-scrollbar-track{
+        background-color:rgba(63, 63, 63, 0.463);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        box-shadow:0 0 3px #fefefe;
+    }
+    body::-webkit-scrollbar-thumb{
+        background-color: red;
+        border:2px solid #fff;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+    }
+section:target{
+    padding-top: 86px;
+}
+.special-text {
+    font-weight: bold;
+}
+/* Header styles */
+.navbar{
+    background-color: #000;
+    z-index: 999!important;
+    padding:13px 20px;
+}
+.navbar .nav-link{
+    color:rgb(236, 236, 236)!important;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+.nav-link.activate{
+    color: rgb(250, 3, 3)!important;
+}
+.navbar-toggler:focus{
+border: 1px solid red!important;
+}
+.navbar .dropdown-menu{
+background-color: rgba(16, 16, 16, 0.9);
+}
+.navbar .dropdown-item{
+color:#fefefe;
+padding:.75rem 1.5rem;
+}
+.navbar .dropdown-item:hover{
+    background-color: rgb(58, 58, 58);
+}
+.dropdown-divider{
+    margin:0;
+}
+
+
+/* banner styles */
+
+#banner-carousel .carousel-item{    
+    height: calc(100vh - 86px);
+    background-position: start!important;
+}
+#banner-carousel  .carousel-item img{
+    width: 100%;
+    height: 100%;
+}
+#banner-carousel .carousel-item:after{
+    display: block;
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0,.5);
+}
+#banner-carousel .carousel-caption{
+    bottom:120px;
+}
+.goto-btn{
+    display: inline-block;
+    height: 50px;
+    width:50px;    
+    background-color: rgba(0, 0, 0, 0.63);
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid #fefefe;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.goto-btn span{
+    color: #fefefe;
+    font-size: 25px;
+    position:absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+
+/* heading styles */
+.headings{
+    position: relative;
+    margin: 30px auto;
+    text-align: center;
+    position: relative;
+    width: fit-content;
+}
+.headings i{
+    position: absolute;
+    bottom:-20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color:red;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.main-heading{    
+    color: rgb(63, 63, 63);
+    font-family: 'sofia';
+    font-weight: bold;
+}
+.main-heading::before{
+content:'';
+display: block;    
+width:40%;
+height: 2px;
+background-color: red;
+position: absolute;
+bottom:-12px;
+left:0;
+}
+.main-heading::after{
+    content:'';
+    display: block;    
+    width:40%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    bottom:-12px;
+    right: 0;
+    }
+p small{
+    font-weight: bold;
+}
+
+    
+
+
+
+/* about section  */
+.about-img{
+    overflow-x: hidden;
+}
+.about-img img{
+    width:100%;
+    height:250px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.features{
+    background-color: rgba(0, 0, 0, 0.9);
+    color:#999;
+}
+.features .icon-wrapper{
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.features .icon-wrapper:hover{
+    background-color: red;
+}
+.features .icon-wrapper i{
+    color:red;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.features .icon-wrapper:hover i{
+    color:black;
+    
+}
+.features h3{
+    color:#999;
+}
+
+/* Testimonial sectiion */
+.slide-area{
+    background: linear-gradient(rgba(1, 3, 32, 1),rgba(10, 1, 27, 0.8)),url('./assets/img/bgc.jpg') no-repeat;;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+#ratingCarousel .img-area{
+    width:150px;
+    height:150px;
+    margin: 0 auto;
+    border: 4px solid #ccc;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+#ratingCarousel .img-area:hover{ 
+    border: 4px solid red;
+    border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    -moz-border-radius: 50%; 
+    -ms-border-radius: 50%; 
+    -o-border-radius: 50%;
+    overflow: hidden;
+}
+#ratingCarousel .img-area img{
+    width:100%;
+    height:100%;
+    }
+#ratingCarousel .carousel-caption{
+        position:static;
+        padding-bottom: 30px;
+}
+
+/* Menu styles */
+.recipe-card{
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;    
+}
+.recipe-card h5{
+    background-color: rgb(13, 155, 155);
+    clip-path: polygon(0 0,100% 0,90% 50%,100% 100%,0 100%);
+}
+.recipe-img{    
+    height:250px;   
+}
+
+/* Contact Page */
+
+#contact{
+    background-color: #303030;
+    color:#ccc;
+}
+#contact h1{
+    color:#ccc;
+}
+#contact input,#contact textarea{
+    color:#ccc;    
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+#contact input:focus,#contact textarea:focus{
+outline: none;
+border:1px solid #ccc;
+}
+.submit-btn{
+    padding:10px 30px;
+    display: block;
+    width:100%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: rgb(216, 93, 26);
+    
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.submit-btn:hover{
+    background-color: rgba(255, 0, 0, 0.726);
+    color:#fff;    
+}
+
+/* Maps styles */
+#map {
+    height: 100%;    
+  }
+/* Modal styles */
+.modal{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#spinModal .modal-content{
+    background-color: transparent;
+}
+
+
+@media(max-width:568px){
+    .banner-text{
+        font-size: 22px;
+    }
+    .banner-sub-text{
+        font-size: 16px;
+    }
+}
+
+@media(min-width:568px){
+    .about-img img{        
+        height:300px;
+    }
+}
+@media(min-width:768px){
+    .cool-link{    
+        position: relative;
+        width:fit-content
+    }
+    .cool-link::after{
+        content: '';
+        display: block;
+        background-color: red;
+        width: 0%;
+        height:2px;
+        position: absolute;
+        left: 50%;
+        bottom: 5px;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transition: width .3s ease;
+        -webkit-transition: width .3s ease;
+        -moz-transition: width .3s ease;
+        -ms-transition: width .3s ease;
+        -o-transition: width .3s ease;
+        
+    }
+    .cool-link:hover::after{
+        width: 100%;
+    }
+    .cool-link:hover::after{
+        width: calc(100% - 1rem);
+    }
+    .about-img img{        
+        height:400px;
+    }
+    .recipe-card:hover{
+        transform:translateY(-10px);
+        -webkit-transform:translateY(-10px);
+        -moz-transform:translateY(-10px);
+        -ms-transform:translateY(-10px);
+        -o-transform:translateY(-10px);
+        -webkit-transform:translateY();
+    }
+    
+}
+
+
+
